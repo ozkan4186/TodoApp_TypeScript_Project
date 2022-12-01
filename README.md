@@ -1,4 +1,2 @@
-Adding typescript=>https://create-react-app.dev/docs/adding-typescript/
-Project start command=>npx create-react-app my-app --template typescript
-Other ready template commands => https://www.npmjs.com/search?q=cra%20--
-Live=>https://todoaappwithtypescript.vercel.app/
+[click here](https://glittering-mochi-36798b.netlify.app/)
+![giftype](https://user-images.githubusercontent.com/109352349/205173121-2a6c8a81-9f0d-4ab7-a41e-43b8ffa8b44f.gif)
