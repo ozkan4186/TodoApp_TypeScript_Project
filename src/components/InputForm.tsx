@@ -11,6 +11,7 @@ const InputForm:React.FC<IInputForm> = ({Addtodo}) => {
 const handleClick=()=>{
   Addtodo(task)
   setTask("")
+  
 }
 
 
