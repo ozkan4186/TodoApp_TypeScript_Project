@@ -4,3 +4,5 @@ interface TodoType{
   isDone:boolean
 }
 type AddFn=(text:string)=>void
+type DeleteFn=(id:string|number)=>void
+type ToogleFn=(item:TodoType)=>void

@@ -1,24 +1,28 @@
-import React from 'react';
-
+import React from "react";
 
 interface IListItem {
-  item:TodoType;
+  item: TodoType;
+  toogleTodo: ToogleFn;
+  deleteTodo:DeleteFn;
 }
 
+const TodoListItem: React.FC<IListItem> = ({ item, toogleTodo,deleteTodo }) => {
+  console.log(item);
 
-const TodoListItem:React.FC<IListItem>= ({item}) => {
-  // console.log(item);
   return (
     <li>
-      {item.isDone ? (
-    <p className='checked'> {item.task} </p> 
-      ):(
-           <p> {item.task} </p>
-      ) }
-   
-      <span className="task-icons">✖️</span>
+      {item.isDone ? 
+        <p className="checked" onClick={() => toogleTodo(item)}>
+        
+          {item.task}
+        </p>
+       : 
+        <p onClick={() => toogleTodo(item)} > {item.task} </p>
+      }
+
+      <span onClick={()=>deleteTodo(item.id)} className="task-icons">✖️</span>
     </li>
   );
 };
 
-export default TodoListItem
+export default TodoListItem;
